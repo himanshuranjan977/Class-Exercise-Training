@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses and Interests</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-column {
+  width: 65%;
+}
+
+.right-column {
+  width: 30%;
+}
+
+.section-title {
+    color: blue;
+  background-color: #cfe3f1;
+  text-decoration-color: cornflowerblue;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #fff;
+}
+
+.subheader {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-align: left;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.right-column img {
+  max-width: 400px;
+  height: 400px;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Left Column -->
+  <div class="left-column">
+    <h2 class="section-title">Courses</h2>
+    <p>Here are some courses I've taken:</p>
+
+    <table>
+      <tr>
+        <th>Course Number</th>
+        <th>Course Title</th>
+        <th>Semester Taken</th>
+      </tr>
+      <tr>
+        <td colspan="3" class="subheader">For Credit</td>
+      </tr>
+      <tr>
+        <td><a href="#">6.813</a></td>
+        <td><a href="#">User Interface Design</a></td>
+        <td><a href="#">Spring 2014</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">6.034</a></td>
+        <td>Artificial Intelligence</td>
+        <td>Fall 2013</td>
+      </tr>
+      <tr>
+        <td><a href="#">6.006</a></td>
+        <td>Introduction to Algorithms</td>
+        <td>Fall 2013</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="subheader">Listener</td>
+      </tr>
+      <tr>
+        <td><a href="#">6.867</a></td>
+        <td>Machine Learning</td>
+        <td>Fall 2013</td>
+      </tr>
+      <tr>
+        <td><a href="#">6.830</a></td>
+        <td>Database Systems</td>
+        <td>Fall 2012</td>
+      </tr>
+    </table>
+
+    <h2 class="section-title">Interests</h2>
+    <p>I am interested in <b>HCI</b>, memes, and youtube <i>videos</i>.</p>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right-column">
+  <img src="download.jpeg" alt="Dog scientist in a lab" />
+  <!-- Optional attribution below if needed -->
+  <!-- <p class="attribution">Image: Photographer Name / Source (License)</p> -->
+</div>
+
+</div>
+
+</body>
+</html>

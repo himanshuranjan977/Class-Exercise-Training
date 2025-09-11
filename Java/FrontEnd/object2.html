@@ -1,0 +1,40 @@
+<script>
+    class Student {
+        constructor(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+
+        writeExam() {
+            console.log(this.name + " is writing an exam");
+        }
+
+        add(a, b) {
+            console.log("Sum : " + (a + b));
+        }
+        sub(a,b){
+            console.log("Sub : " + (b-a));
+            return (a-b);
+        }
+
+        findEven(a) {
+            if (a % 2 === 0) {
+                console.log(a + " is even");
+            } else {
+                console.log(a + " is not even");
+            }
+        }
+    }
+
+    var s1 = new Student("Ashok", 26, "Male");
+    console.log(s1);          // Logs the whole object
+    console.log(s1.name);     // Dot notation
+    console.log(s1['name']);  // Bracket notation
+
+    s1.writeExam();
+    s1.add(10, 20);
+    s1.findEven(15);
+    s1.sub(20,40);
+</script>
+

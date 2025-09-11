@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Todo</title>
+</head>
+<body>
+    <h4>Add to the todos</h4>
+
+    <form onsubmit="addTodo(event)">
+        <div>
+           <label>User ID</label>
+           <input type="number" id="userid" required />
+        </div>
+        <div>
+           <label>Title</label>
+           <input type="text" id="title" required />
+        </div>
+        <div>
+           <label>Email</label>
+           <input type="email" id="email" required />
+        </div>
+        <div>
+            <button type="submit">Save Todo</button>
+        </div>
+    </form>
+
+    <script>
+        function addTodo(event) {
+            event.preventDefault(); // Prevent page reload
+
+            const apiUrl = "https://jsonplaceholder.typicode.com/todos";
+
+            const jsonObject = {
+                userId: document.getElementById("userid").value,
+                title: document.getElementById("title").value,
+                email: document.getElementById("email").value,
+                completed: false
+            };
+
+            fetch(apiUrl, {
+                method: "POST",
+                body: JSON.stringify(jsonObject),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(res => res.json()) // Convert response to JSON
+            .then(json => {
+                console.log("New data: ", json); // Success handling
+            })
+            .catch(err => {
+                console.error("Error: ", err); // Error handling
+            });
+        }
+    </script>
+</body>
+</html>
+

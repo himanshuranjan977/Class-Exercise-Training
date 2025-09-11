@@ -1,0 +1,4 @@
+Apple - 1000
+Banana - 200
+Mango - 1000
+Papaya - 1000

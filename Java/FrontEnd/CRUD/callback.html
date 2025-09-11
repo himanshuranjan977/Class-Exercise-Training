@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Example</title>
+</head>
+<body>
+<script>
+// A simple callback function
+function printAnswer(value) {
+    console.log("Answer : " + value);
+}
+
+// Function with callback: Addition
+function add(a, b, callback) {
+    var c = a + b;
+    callback(c);
+}
+
+// Function with callback: Subtraction
+function sub(a, b, callback) {
+    var c = a - b;
+    callback(c);
+}
+
+// Function with callback: Greeting
+function welcome(callback) {
+    console.log("Welcome!");
+    callback();
+}
+
+function sayBye() {
+    console.log("Goodbye!");
+}
+
+// Using the callback functions
+add(10, 20, printAnswer);      // Answer : 30
+sub(10, 20, printAnswer);      // Answer : -10
+welcome(sayBye);               // Welcome! then Goodbye!
+
+</script>
+</body>
+</html>

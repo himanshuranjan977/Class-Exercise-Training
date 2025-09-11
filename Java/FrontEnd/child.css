@@ -1,0 +1,45 @@
+.table-1 thead tr th{
+    background-color: red;
+    color: white;
+}
+.table-1 tbody tr:nth-child(even) td {
+    background-color: wheat;
+    color: black;
+
+}
+.table-1 tbody tr:nth-child(odd) td {
+    background-color: rgb(9, 174, 34);
+    color: black;
+
+}
+
+.table-2 tbody tr:nth-child(2) td {
+    background-color: rgb(89, 70, 182);
+    color: black;
+
+}
+.table-2 tbody tr:nth-child(3n) td {
+    background-color: rgb(170, 206, 11);
+    color: black;
+
+}
+
+.table-2 thead tr th{
+    background-color: rgb(22, 148, 210);
+    color: white;
+}
+
+.table-3 thead tr th{
+    background-color: rgb(200, 208, 184);
+    color: white;
+}
+.table-3 tbody tr:nth-child(n+4) td {
+    background-color: rgb(170, 206, 11);
+    color: black;
+
+}
+.table-3 tbody tr:nth-child(-n+3) td {
+    background-color: rgb(168, 59, 59);
+    color: black;
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Calculator</title>
+    <style>
+        .my-form {
+            background-color: pink;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12">
+                <div class="my-form p-3 m-3">
+                    <form>
+                        <div class="mb-2">
+                            <label class="form-label">Value 1</label>
+                            <input type="number" class="form-control" id="value1">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Value 2</label>
+                            <input type="number" class="form-control" id="value2">
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button type="button" onclick="calculate.add()" class="btn btn-success">Add</button>
+                            <button type="button" onclick="calculate.subtract()" class="btn btn-danger">Subtract</button>
+                            <button type="button" onclick="calculate.multiply()" class="btn btn-primary">Multiply</button>
+                            <button type="button" onclick="calculate.divideQ()" class="btn btn-warning">Divide (Quotient)</button>
+                            <button type="button" onclick="calculate.divideR()" class="btn btn-info">Divide (Remainder)</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class Calculator {
+            getValues() {
+                const a = parseInt(document.getElementById("value1").value);
+                const b = parseInt(document.getElementById("value2").value);
+                return [a, b];
+            }
+
+            add() {
+                let [a, b] = this.getValues();
+                alert(`Sum = ${a + b}`);
+            }
+
+            subtract() {
+                let [a, b] = this.getValues();
+                alert(`Difference = ${a - b}`);
+            }
+
+            multiply() {
+                let [a, b] = this.getValues();
+                alert(`Product = ${a * b}`);
+            }
+
+            divideQ() {
+                let [a, b] = this.getValues();
+                if (b === 0) {
+                    alert("Cannot divide by zero!");
+                } else {
+                    alert(`Quotient = ${Math.floor(a / b)}`);
+                }
+            }
+
+            divideR() {
+                let [a, b] = this.getValues();
+                if (b === 0) {
+                    alert("Cannot divide by zero!");
+                } else {
+                    alert(`Remainder = ${a % b}`);
+                }
+            }
+        }
+
+        const calculate = new Calculator();
+    </script>
+</body>
+</html>
+

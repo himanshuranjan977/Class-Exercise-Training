@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Calculator with Select Action</title>
+    <style>
+        .my-form {
+            background-color: pink;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12">
+                <div class="my-form p-3 m-3">
+                    <form>
+                        <div class="mb-2">
+                            <label class="form-label">Value 1</label>
+                            <input type="number" class="form-control" id="num1" placeholder="Enter first number">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Value 2</label>
+                            <input type="number" class="form-control" id="num2" placeholder="Enter second number">
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label">Select Action</label>
+                            <select id="operation" class="form-select">
+                                <option value="add">Add</option>
+                                <option value="sub">Subtract</option>
+                                <option value="mul">Multiply</option>
+                                <option value="div">Divide</option>
+                            </select>
+                        </div>
+
+                        <button type="button" onclick="calculate()" class="btn btn-success">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+            let op = document.getElementById("operation").value;
+            let result;
+
+            if (isNaN(a) || isNaN(b)) {
+                alert("Please enter both numbers!");
+                return;
+            }
+
+            switch (op) {
+                case "add":
+                    result = a + b;
+                    break;
+                case "sub":
+                    result = a - b;
+                    break;
+                case "mul":
+                    result = a * b;
+                    break;
+                case "div":
+                    if (b === 0) {
+                        alert("Division by zero not allowed!");
+                        return;
+                    }
+                    result = a / b;
+                    break;
+                default:
+                    alert("Invalid operation selected");
+                    return;
+            }
+
+            alert("Result = " + result);
+        }
+    </script>
+</body>
+</html>

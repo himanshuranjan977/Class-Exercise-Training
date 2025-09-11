@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+  
+   
+    
+
+     <!-- ========================
+         Application Metadata
+    ========================= -->
+    <display-name>Contact Manager</display-name>
+    <description>Simple Contact Manager using JSP + Servlet + Collections</description>
+
+    <!-- ========================
+         Welcome Page
+    ========================= -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ========================
+         Servlet Mappings
+    ========================= -->
+
+    <!-- Add Contact -->
+    <servlet>
+        <servlet-name>AddContactServlet</servlet-name>
+        <servlet-class>com.cm.controller.AddContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddContactServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- List Contacts Servlet -->
+<servlet>
+    <servlet-name>ListContactServlet</servlet-name>
+    <servlet-class>com.cm.controller.ListContactServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ListContactServlet</servlet-name>
+    <url-pattern>/list</url-pattern>
+</servlet-mapping>
+    
+
+    <!-- Edit Contact -->
+    <servlet>
+        <servlet-name>EditContactServlet</servlet-name>
+        <servlet-class>com.cm.controller.EditContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditContactServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
+    <!-- Update Contact -->
+    <servlet>
+        <servlet-name>UpdateContactServlet</servlet-name>
+        <servlet-class>com.cm.controller.UpdateContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateContactServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <!-- Delete Contact -->
+    <servlet>
+        <servlet-name>DeleteContactServlet</servlet-name>
+        <servlet-class>com.cm.controller.DeleteContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteContactServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>
+    

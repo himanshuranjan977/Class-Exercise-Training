@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Table - jQuery AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2 style="text-align:center;">Photos List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Thumbnail</th>
+            </tr>
+        </thead>
+        <tbody id="photoTable"></tbody>
+    </table>
+
+    <script>
+        function getAllPhotos() {
+            const apiUrl = "https://jsonplaceholder.typicode.com/photos";
+            $.ajax({
+                url: apiUrl,
+                method: "GET",
+                dataType: "json",
+                success: function(data) {
+                    let rows = "";
+                    data.slice(0, 50).forEach(temp => {
+                        console.log(temp['id'] + " " + temp['title'] + " - " + temp['url']);
+                        rows += '<tr> \
+                                    <td>' + temp['id'] + '</td> \
+                                    <td><b>' + temp['title'] + '</b></td> \
+                                    <td><img src="' + temp['thumbnailUrl'] + '></td> \
+                                 </tr>';
+                    });
+                    $("#photoTable").html(rows);
+                },
+                error: function(xhr, status, error) {
+                    console.log("XHR:", xhr);
+                    console.log("Status:", status);
+                    console.log("Error:", error);
+                }
+            });
+        }
+
+        // Call the function when page loads
+        getAllPhotos();
+    </script>
+</body>
+</html>

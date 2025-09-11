@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Example</title>
+</head>
+<body>
+<script>
+test();
+
+function test() {
+    // Current date & time
+    var currentDate = new Date();
+    console.log("Current Date:", currentDate);
+
+    // Date of birth: (2000, 0, 30) -> 30 Jan 2000
+    var dob = new Date(2000, 0, 30);
+    console.log("DOB:", dob);
+
+    // Custom datetime
+    var trainDateTime = new Date("2025-08-15T16:30:45");
+    console.log("Train DateTime:", trainDateTime);
+
+    console.log("-- Date Parts --");
+    console.log("Year:", trainDateTime.getFullYear());
+    console.log("Month (0=Jan, 11=Dec):", trainDateTime.getMonth());
+    console.log("Date:", trainDateTime.getDate());
+    console.log("Day of Week (0=Sun, 6=Sat):", trainDateTime.getDay());
+    console.log("Hours (0-23):", trainDateTime.getHours());
+    console.log("Minutes:", trainDateTime.getMinutes());
+    console.log("Seconds:", trainDateTime.getSeconds());
+
+    // Change the day of the month to 20
+    trainDateTime.setDate(20);
+    console.log("Train Date after date change:", trainDateTime);
+}
+</script>
+</body>
+</html>

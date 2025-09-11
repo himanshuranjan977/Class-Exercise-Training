@@ -1,0 +1,38 @@
+.process-section{
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+    }
+    .process-section {
+      padding: 60px 0;
+    }
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    .process-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #0d6efd;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    .process-step h5 {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    .process-step p {
+      margin: 0;
+      color: #666;
+    }
+    
+
+}

@@ -1,0 +1,40 @@
+<script>
+    // Class definition
+    class Student {
+        constructor(name, age, gender, indian, subjects) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.indian = indian;
+            this.subjects = subjects;
+        }
+
+        // Method to add a subject
+        addSubject(subject) {
+            this.subjects.push(subject);
+        }
+    }
+
+    // Create 5 student objects
+    var students = [
+        new Student("Ashok", 26, "Male", true, ["Maths", "Science", "Social"]),
+        new Student("Priya", 24, "Female", true, ["English", "Biology", "Chemistry"]),
+        new Student("Rahul", 27, "Male", false, ["Physics", "Maths", "Computer Science"]),
+        new Student("Ananya", 23, "Female", true, ["Economics", "History", "Geography"]),
+        new Student("Vikram", 28, "Male", true, ["Art", "Maths", "Music"])
+    ];
+
+    // Add "Computer Science" to each student's subjects
+    students.forEach(student => {
+        student.addSubject("Computer Science");
+    });
+
+    // Convert to JSON string
+    const jsonString = JSON.stringify(students);
+
+    // Display JSON string in console
+    console.log(jsonString);
+    //convert string to json
+    const myJson = JSON.parse(jsonString);
+    console.log(myJson);
+</script>

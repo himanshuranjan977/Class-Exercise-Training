@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      margin: 40px auto; /* center the table */
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    /* Header */
+    th {
+      background-color: #3b82f6; /* blue */
+      color: white;
+    }
+
+    /* Alternate row color */
+    tbody tr:nth-child(even) {
+      background-color: #f2f8ff; /* light blue */
+    }
+
+    /* Footer */
+    tfoot td {
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>OrderID</th>
+        <th>Order Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>USA</td>
+        <td>1000</td>
+        <td>$1,300</td>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>1001</td>
+        <td>$700</td>
+      </tr>
+      <tr>
+        <td>CA</td>
+        <td>1002</td>
+        <td>$2,000</td>
+      </tr>
+      <tr>
+        <td>CA</td>
+        <td>1003</td>
+        <td>$1,000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total</td>
+        <td>$5,000</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

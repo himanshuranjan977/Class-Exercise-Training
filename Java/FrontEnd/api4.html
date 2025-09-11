@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Todo</title>
+</head>
+<body>
+    <h4>Add to the todos</h4>
+
+    <form onsubmit="addTodo(event)">
+        <div>
+           <label>User ID</label>
+           <input type="number" id="userid" required />
+        </div>
+        <div>
+           <label>Title</label>
+           <input type="text" id="title" required />
+        </div>
+        <div>
+           <label>Email</label>
+           <input type="email" id="email" required />
+        </div>
+        <div>
+            <button type="submit">Save Todo</button>
+        </div>
+    </form>
+
+    <script>
+        async function addTodo(event) {
+            event.preventDefault(); // prevent form from reloading page
+
+            const apiUrl = "https://jsonplaceholder.typicode.com/todos";
+
+            const jsonObject = {
+                userId: document.getElementById("userid").value,
+                title: document.getElementById("title").value,
+                completed: false
+            };
+
+            const response = await fetch(apiUrl, {
+                method: "POST",
+                body: JSON.stringify(jsonObject),
+                headers: {
+                    'Content-type': 'application/json',
+                }
+            });
+            if(response.status==200){
+                var newTodo1 =await response.json();
+                console.log("New data : " ,newTodo1);
+            }
+            else{
+                console.log("Error in API");
+            }
+
+            const newTodo = await response.json();
+            console.log("New data:", newTodo);
+        }
+    </script>
+</body>
+</html>

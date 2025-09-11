@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+     var marks = [35,54,25,45,65,58,99,44];
+    var name = ["King", "jack", "Santosh", "sangeetha"];
+    
+    console.log("-------map-------");
+    var newmarks=marks.map(temp => temp+10);
+    console.log(marks);
+    console.log(newmarks);
+
+    console.log("-------Filter-------");
+    var highMarks =marks.filter(temp=>temp >50);
+    console.log(marks);
+    console.log(highMarks);
+
+    console.log("-------for loop-------");
+    for(var i =0;i<marks.length;i++){
+        console.log(marks[i]);
+    }
+
+    console.log("------for each loop-----");
+    marks.forEach(function(value,count){
+        console.log(value+" is at "+count)
+    });
+
+</script>

@@ -1,0 +1,7 @@
+ol li:nth-child(2){
+    color: red;
+}
+ol li:last-child(){
+    color: blue;
+}
+

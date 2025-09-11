@@ -1,0 +1,50 @@
+Name: Himanshu
+Address: Delhi
+Mobile: 9999999999
+Bank Details:
+Account name: Himanshu
+Account Number: 123456
+Account Type: Savings
+balance: 10000.0
+
+--------------------------
+Name: Ravi
+Address: Mumbai
+Mobile: 8888888888
+Bank Details:
+Account name: Ravi
+Account Number: 234567
+Account Type: Current
+balance: 20000.0
+
+--------------------------
+Name: Anjali
+Address: Kolkata
+Mobile: 7777777777
+Bank Details:
+Account name: Anjali
+Account Number: 345678
+Account Type: Savings
+balance: 15000.0
+
+--------------------------
+Name: Neha
+Address: Chennai
+Mobile: 6666666666
+Bank Details:
+Account name: Neha
+Account Number: 456789
+Account Type: Salary
+balance: 30000.0
+
+--------------------------
+Name: Amit
+Address: Bangalore
+Mobile: 5555555555
+Bank Details:
+Account name: Amit
+Account Number: 567890
+Account Type: Fixed
+balance: 50000.0
+
+--------------------------

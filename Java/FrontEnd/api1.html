@@ -1,0 +1,29 @@
+<script>
+    async function getAllUsers() {
+        const apiUrl = "https://jsonplaceholder.typicode.com/users";
+        let response = await fetch(apiUrl);
+        let userList = await response.json();
+        console.log("Users List:", userList);
+
+        // Example: Print user names
+        userList.forEach(user => {
+            console.log(user.name);
+        });
+    }
+
+    async function getAllTodos() {
+        const apiUrl = "https://jsonplaceholder.typicode.com/todos";
+        let response = await fetch(apiUrl);
+        let todoList = await response.json();
+        console.log("Todos List:", todoList);
+
+        // Print todo titles
+        todoList.forEach(todo => {
+            console.log(todo.title);
+        });
+    }
+
+    // Call the functions
+    getAllUsers();
+    getAllTodos();
+</script>

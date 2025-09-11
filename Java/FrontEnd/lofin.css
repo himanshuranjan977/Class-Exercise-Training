@@ -1,0 +1,31 @@
+body {
+    background: #f8f9fa; /* Light background for contrast */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    color: white; /* Better contrast on gradient */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}

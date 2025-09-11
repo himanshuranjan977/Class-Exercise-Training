@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="auto1" class="com.gl.spring.Automobile" scope="singleton" >
+           <constructor-arg value="red"></constructor-arg>
+           <constructor-arg value="20"></constructor-arg>
+      </bean>
+      <bean id="auto2" class="com.gl.spring.Automobile" scope="prototype" >
+           <constructor-arg value="red"></constructor-arg>
+           
+      </bean>
+      <bean id="auto3" class="com.gl.spring.Automobile" scope="singleton" >
+           
+           
+      </bean>
+    
+    
+
+</beans>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var marks = [10, 20, 30, 40];
+    var name = ["King", "jack", "Santosh", "sangeetha"];
+
+    console.log(marks);
+    console.log(marks[2]);
+    console.log(name);
+
+    console.log(name.indexOf("jack"));
+
+    // Fixed: "include" → "includes"
+    console.log(marks.includes(45));
+
+    console.log("------------");
+    console.log(marks);
+
+    // push() returns new length, so we print after pushing
+    marks.push(50);
+    console.log("After push 50:", marks);
+
+    marks.unshift(60);
+    console.log("After unshift 60:", marks);
+    console.log(marks);
+
+</script>

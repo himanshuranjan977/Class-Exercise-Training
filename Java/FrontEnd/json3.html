@@ -1,0 +1,16 @@
+<script>
+    function test(){
+        return new Promise(resolve =>{
+            setTimeout(() =>{
+            resolve( "Good evening");
+        },5000);
+        });
+    }
+   
+   
+    async function trail(){
+        var responce = await test();
+        console.log(responce);
+    }
+    trail();
+</script>

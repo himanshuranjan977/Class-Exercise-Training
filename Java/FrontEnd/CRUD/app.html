@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Users</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="crud.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="my-panel">
+                    <h4 class="title">Add new users</h4>
+                    <div class="user-form">
+                        <form onsubmit="addUser(event)">
+                            
+                            <div class="mb-3">
+                                <label >Username</label>
+                                <input type="text" id="username" required class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label >Company Name</label>
+                                <input type="text" id="companyname" required class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label >City</label>
+                                <input type="text" id="city" required class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label >Zipcode</label>
+                                <input type="text" id="zipcode" required class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-sm btn-warning">Add</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

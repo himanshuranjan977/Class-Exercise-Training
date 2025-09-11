@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Table</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Company Name</th>
+        </tr>
+        <tbody id="target"></tbody>
+    </table>
+
+    <script>
+        async function getAllUsers() {
+            const apiUrl = "https://jsonplaceholder.typicode.com/users";
+            let response = await fetch(apiUrl);
+            let userList = await response.json();
+            let rows = "";
+
+            console.log("Users List:", userList);
+
+            userList.forEach(user => {
+                rows += `<tr>
+                            <td>${user.name}</td>
+                            <td>${user.username}</td>
+                            <td>${user.email}</td>
+                            <td>${user.address.city}</td>
+                            <td>${user.company.name}</td>
+                         </tr>`;
+            });
+
+            document.getElementById("target").innerHTML = rows;
+        }
+        async function addTodo() {
+            const apiUrl ="https://jsonplaceholder.typicode.com/todos";
+            var jasonObject ={
+                userId: 1,
+                title : "For testing",
+                compleated : false
+
+            };
+
+            var responce = await fetch(apiUrl, {
+                method: "POST",
+                body: JSON.stringify(jasonObject),
+                headers: {
+                    'Content-type': 'application/json',
+                }
+            });
+            var newTodo = await responce.json();
+            console.log("New data : " ,newTodo);
+            
+        } addTodo();
+
+        //getAllUsers();
+    </script>
+</body>
+</html>

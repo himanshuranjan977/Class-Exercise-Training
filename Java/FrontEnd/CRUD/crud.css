@@ -1,0 +1,15 @@
+.container{
+    padding: auto;
+    color: blue;
+
+
+}
+.bg-warning {
+    background-color: yellow;
+
+}
+.user-form{
+    padding: 10px;
+    border:  black 2px dashed;
+    background-color: bisque;
+}

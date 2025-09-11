@@ -1,0 +1,63 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    h2 {
+      background-color: #ccc;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 6px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .project-title {
+      font-weight: bold;
+    }
+
+    .label {
+      display: inline-block;
+      width: 150px;
+    }
+
+    .next-page {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  
