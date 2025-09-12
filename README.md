@@ -196,9 +196,8 @@ Copyright (c) 2025 Himanshu Ranjan
 
 ## Contact
 
-* GitHub: [https://github.com/himanshuranjan977](https://github.com/himanshuranjan977)
-* LinkedIn: (add your profile link if you want)
+- 🌐 GitHub: [Himanshu's GitHub](https://github.com/himanshuranjan977)  
+- 💼 LinkedIn: [Himanshu Ranjan](https://www.linkedin.com/in/himanshu-ranjan-6019a6215/)  
 
 ---
 
-*This README is a template — tell me if you want me to tailor it more specifically to the exact folders/projects in your repo (I can add example commands, properties, and sample `docker-compose.yml`).*
