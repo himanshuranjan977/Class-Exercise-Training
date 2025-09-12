@@ -181,7 +181,7 @@ Successfully completed **Wipro Class Exercise Training** conducted by **Great Le
 The training emphasized **hands-on coding exercises, problem-solving, and building real-world applications** using **REST APIs and MVC architecture**.  
 
 It enhanced my understanding of **backend development, database integration, and enterprise-level application design**, strengthening both my technical and project skills.
-```
+
 ## Contact
 
 - 🌐 GitHub: [Himanshu's GitHub](https://github.com/himanshuranjan977)  
