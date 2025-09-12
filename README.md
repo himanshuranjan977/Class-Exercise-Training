@@ -30,9 +30,7 @@ This repository contains exercises and projects completed as part of the **Wipro
   * [Microservices & Security](#microservices--security)
   * [Docker](#docker)
   * [MongoDB](#mongodb)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
+
 
 ## Technologies & Modules
 
