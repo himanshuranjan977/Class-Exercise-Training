@@ -185,13 +185,6 @@ node_modules/
 
 Please follow the code style used in the repo and add comments where necessary.
 
-## License
-
-Specify a license here (for example MIT):
-
-```
-MIT License
-Copyright (c) 2025 Himanshu Ranjan
 ```
 
 ## Contact
