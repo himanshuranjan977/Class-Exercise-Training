@@ -63,7 +63,7 @@ Wipro-Class-Exercise-Training/
 
 ## Prerequisites
 
-* Java JDK 11 or newer
+* Java JDK 17 or newer
 * Maven or Gradle
 * Node.js + npm (if using frontend frameworks)
 * MySQL server
@@ -173,18 +173,6 @@ node_modules/
 
 # Environment
 .env
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "Add feature"`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Create a Pull Request
-
-Please follow the code style used in the repo and add comments where necessary.
-
 ```
 
 ## Contact
