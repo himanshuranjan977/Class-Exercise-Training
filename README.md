@@ -3,9 +3,7 @@
 ![repo-size-badge](https://img.shields.io/badge/Repo-Wipro--Class--Exercise--Training-blue)
 ![language-java](https://img.shields.io/badge/Language-Java-orange)
 
-## Repository
 
-**Owner:** `himanshuranjan977`
 
 ## Project Title
 
