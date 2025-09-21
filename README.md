@@ -101,9 +101,9 @@ npm start
 1. Create database and user (example):
 
 ```sql
-CREATE DATABASE wipro_training;
-CREATE USER 'wipro_user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON wipro_training.* TO 'wipro_user'@'localhost';
+CREATE DATABASE database;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON wipro_training.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
@@ -167,7 +167,7 @@ node_modules/
 ```
 ## 📘 Summary
 
-Successfully completed **Wipro Class Exercise Training** conducted by **Great Learning**, where I gained practical exposure to **Java, Spring Boot, MySQL, and web technologies**.  
+Successfully completed **Class Exercise Training** conducted by **Great Learning**, where I gained practical exposure to **Java, Spring Boot, MySQL, and web technologies**.  
 
 The training emphasized **hands-on coding exercises, problem-solving, and building real-world applications** using **REST APIs and MVC architecture**.  
 
