@@ -1,4 +1,4 @@
-# Wipro-Class-Exercise-Training
+# Class-Exercise-Training
 
 ![repo-size-badge](https://img.shields.io/badge/Repo-Wipro--Class--Exercise--Training-blue)
 ![language-java](https://img.shields.io/badge/Language-Java-orange)
