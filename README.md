@@ -103,7 +103,7 @@ npm start
 ```sql
 CREATE DATABASE database;
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON wipro_training.* TO 'user'@'localhost';
+GRANT ALL PRIVILEGES ON training.* TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
