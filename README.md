@@ -1,17 +1,10 @@
 # Class-Exercise-Training
-
-![repo-size-badge](https://img.shields.io/badge/Repo-Wipro--Class--Exercise--Training-blue)
-![language-java](https://img.shields.io/badge/Language-Java-orange)
-
-
-
-## Project Title
-
-Wipro Class Exercise Training — Fullstack Java (Great Learning)
+## Project Title 
+Class Exercise Training — Fullstack Java (Great Learning)
 
 ## Description
 
-This repository contains exercises and projects completed as part of the **Wipro Class Exercise Training** by Great Learning. The curriculum covers Core Java, Frontend, MySQL, Spring, Spring Boot, Microservices & Security, Docker, and MongoDB. The purpose of this repo is to collect practical assignments, sample apps, notes, and runnable code for learning and demonstration.
+This repository contains exercises and projects completed as part of the **Class Exercise Training** by Great Learning. The curriculum covers Core Java, Frontend, MySQL, Spring, Spring Boot, Microservices & Security, Docker, and MongoDB. The purpose of this repo is to collect practical assignments, sample apps, notes, and runnable code for learning and demonstration.
 
 ## Table of Contents
 
